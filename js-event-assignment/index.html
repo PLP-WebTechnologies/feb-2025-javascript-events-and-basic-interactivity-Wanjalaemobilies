@@ -1,0 +1,60 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My interactive Web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Playground</h1>
+    </header>
+
+    <main>
+        <section id="event-handling">
+            <h2>My Event Handling Heading</h2>
+            <button id="change-text-btn">Click Me!</button>
+            <div id="hover-box">Hover over me!</div>
+            <input type="text" id="keypress-input" placeholder="Type something...">
+            <button id="secret-btn">Double-click here!</button>
+        </section>
+
+        <section id="interactive-elements">
+            <h2>This are my Interactive Elements</h2>
+            <button id="color-change-btn">Change my color</button>
+            <div id="gallery">
+                <img src="pexels-beevee-1020478.jpg" alt="Gallery Image 1" width="300" height="200">
+                <img src="pexels-soldiervip-1322129.jpg" alt="Gallery Image 2" width="300" height="200">
+                <img src="pexels-soldiervip-1386604.jpg" alt="Gallery Image 3" width="300" height="200">
+            </div>
+            <div id="tabs">
+                <button class="tab" data-content="content1">Tab 1</button>
+                <button class="tab" data-content="content2">Tab 2</button>
+                <button class="tab" data-content="content3">Tab 3</button>
+                <div id="content1" class="tab-content">I am an ICT Expert with a Specialisation in Networking.</div>
+                <div id="content2" class="tab-content">I am a holder of a bachelors Degree in ICT</div>
+                <div id="content3" class="tab-content">I also do web Development</div>
+            </div>
+        </section>
+
+        <section id="form-validation">
+            <h2>Fill the form below for Validation</h2>
+            <form id="signup-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span id="email-error" class="error-message"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" minlength="8" required>
+                <span id="password-error" class="error-message"></span>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
